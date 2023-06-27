@@ -15,7 +15,7 @@ const Title = () => (
 );
 
 
-//component composition -- component inside component
+//component composition -- component inside
 const HeadingComponent1 = () => (
     <div id="container">
         <Title />
