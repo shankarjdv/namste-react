@@ -4,6 +4,8 @@
   "description": "this is namste react by shankar",
   "main": "app.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {

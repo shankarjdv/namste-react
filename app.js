@@ -2,25 +2,17 @@
 import React from "react"
 import ReactDOM from "react-dom/client";
 
+// React Element
 
-const parent = React.createElement(
-    "div",
-    { id: "parent" },
-    React.createElement(
-        "div",
-        { id: "child" },
-        [React.createElement("h1", {}, "I'm an h1 tag"),
-        React.createElement("h2", {}, "I'm an h1 tag")]
-    )
-)
+const heading = React.createElement("h1",{id:"heading"}, "namste reaact")
+console.log(heading)
 
-// const heading = React.createElement(
-//     "h1",
-//     {id: "heading", xyz: "abc"},
-//     "Hello world from React"
-// );
-console.log(parent)
+// JSX - is not HTML in JS(it is xml/html like syntax)
+//JSX(transpiled before it reaches the JS) - PARCEL - Babel
+
+const jsxHeading = <h1 id="heading">Namaste React using JSX</h1>
+console.log(jsxHeading)
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent)
+root.render(jsxHeading)
